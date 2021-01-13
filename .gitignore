@@ -1,35 +1,44 @@
-/gradle/wrapper/gradle-wrapper.properties
-##----------Android----------
-# build
-*.apk
-*.ap_
-*.dex
-*.class
-bin/
-gen/
-build/
+  
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# gradle
-.gradle/
-gradle-app.setting
-!gradle-wrapper.jar
-build/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-local.properties
+# testing
+/coverage
 
-##----------idea----------
-*.iml
-.idea/
-*.ipr
-*.iws
+# production
+/build
 
-# Android Studio Navigation editor temp files
-.navigation/
-
-##----------Other----------
-# osx
-*~
+# misc
 .DS_Store
-gradle.properties
-
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .vscode
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+dist
+package-lock.json
+lib
+
+node_modules
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
